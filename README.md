@@ -2,7 +2,7 @@
 
 ## Demo
 <p align="center">
-  <img src="demo.gif" width="700"/>
+  <img src="media/demo.gif" width="700"/>
 </p>
 
 If the video does not load, you can view it here:
