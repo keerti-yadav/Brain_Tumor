@@ -1,8 +1,9 @@
 # Brain Tumor Detection and Analysis using Deep Learning
 
 ## Demo
-
-<video src="media/Demo_video.mp4" controls width="700"></video>
+<p align="center">
+  <img src="demo.gif" width="700"/>
+</p>
 
 If the video does not load, you can view it here:
 [Watch Demo Video](media/Demo_video.mp4)
