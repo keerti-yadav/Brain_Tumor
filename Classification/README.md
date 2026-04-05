@@ -214,6 +214,24 @@ Observations:
 * Slight variation in meningioma class due to similarity with other tumors
 
 ---
+### 6.6 Sample Prediction with Confidence Scores
+
+<p align="center">
+  <img src="../media/classification_sample.png" width="500"/>
+</p>
+
+The model outputs class probabilities using a softmax function applied to the final logits.
+
+In this example:
+
+- Meningioma: 0.98  
+- Glioma: 0.01  
+- Pituitary: 0.01  
+- No Tumor: 0.00  
+
+The model predicts **Meningioma** with high confidence (98%), indicating strong certainty in classification.
+
+Confidence scores provide insight into the model's reliability and are particularly useful in real-world medical decision-making scenarios.
 
 ## 7. Discussion
 
