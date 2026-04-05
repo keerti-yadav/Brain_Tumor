@@ -34,7 +34,9 @@ Grad-CAM computes the importance of each feature map using gradients of the targ
 
 <div align="center" style="border:1px solid #ccc; padding:12px; border-radius:8px; width:fit-content; margin:auto;">
 
-α_k = mean( ∂y / ∂A_k )
+<p align="center">
+  <img src="../media/f1.png" width="200" style="border:1px solid #ccc; padding:10px; border-radius:8px;" />
+</p>
 
 </div>
 
@@ -48,7 +50,9 @@ The class activation map is obtained by combining feature maps using their impor
 
 <div align="center" style="border:1px solid #ccc; padding:12px; border-radius:8px; width:fit-content; margin:auto;">
 
-CAM = Σ_k ( α_k · A_k )
+<p align="center">
+  <img src="../media/f2.png" width="200" style="border:1px solid #ccc; padding:10px; border-radius:8px;" />
+</p>
 
 </div>
 
