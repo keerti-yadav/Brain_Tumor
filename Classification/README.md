@@ -230,6 +230,7 @@ In this example:
 - No Tumor: 0.00  
 
 The model predicts **Meningioma** with high confidence (98%), indicating strong certainty in classification.
+The probabilities are obtained using the softmax function applied to the output logits of the neural network.
 
 Confidence scores provide insight into the model's reliability and are particularly useful in real-world medical decision-making scenarios.
 
