@@ -6,3 +6,5 @@ tqdm
 albumentations
 streamlit
 matplotlib
+scikit-learn
+pillow
