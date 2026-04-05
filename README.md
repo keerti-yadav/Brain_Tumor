@@ -167,12 +167,16 @@ Brain_Tumor/
 
 ## Technologies Used
 
-* Python
-* PyTorch
-* OpenCV
-* NumPy
-* Matplotlib
-* Streamlit
+| Technology     | Role in Project                                                                                                                                                            |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| PyTorch        | Core deep learning framework used to build and train the classification (EfficientNet) and segmentation (U-Net) models, and to implement Grad-CAM using autograd and hooks |
+| Torchvision    | Provided pretrained EfficientNet-B0 model and image transformation utilities                                                                                               |
+| OpenCV         | Used for image processing, resizing, heatmap generation, and overlaying Grad-CAM and segmentation outputs                                                                  |
+| NumPy          | Used for numerical computations, array manipulation, and processing gradients and activations in Grad-CAM                                                                  |                                                                                                                                                               |
+| Streamlit      | Built the interactive web application for uploading images and visualizing classification, segmentation, and Grad-CAM outputs                                              |
+| Matplotlib     | Used for plotting training curves, Dice score, and visualizing outputs                                                                                                     |
+| Scikit-learn   | Used for evaluation metrics such as confusion matrix, classification report, and ROC curve                                                                                 |
+| Pillow (PIL)   | Used for image loading and basic preprocessing operations                                                                                                                  |
 
 ---
 
