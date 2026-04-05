@@ -103,55 +103,9 @@ Dropout(0.4)
 
 ---
 
-## 5. Training Methodology
+## 5. Performance Evaluation
 
-### 5.1 Loss Function
-
-```python
-CrossEntropyLoss(label_smoothing=0.1)
-```
-
-Label smoothing reduces overconfidence by distributing some probability mass to non-target classes, improving generalization.
-
----
-
-### 5.2 Optimizer
-
-```python
-Adam Optimizer
-```
-
-Adam combines the benefits of adaptive learning rates and momentum, enabling faster convergence.
-
----
-
-### 5.3 Learning Rate Scheduling
-
-```python
-ReduceLROnPlateau
-```
-
-The learning rate is reduced when validation performance stagnates, allowing finer convergence.
-
----
-
-### 5.4 Mixed Precision Training
-
-```python
-torch.cuda.amp
-```
-
-This technique:
-
-* Speeds up training
-* Reduces GPU memory usage
-* Maintains numerical stability
-
----
-
-## 6. Performance Evaluation
-
-### 6.1 Overall Accuracy
+### 5.1 Overall Accuracy
 
 The model achieves:
 
@@ -161,7 +115,7 @@ This indicates strong classification capability across all tumor categories.
 
 ---
 
-### 6.2 Classification Report
+### 5.2 Classification Report
 
 <p align="center">
   <img src="../media/metrics_table.png" width="500"/>
@@ -175,7 +129,7 @@ The classification report shows:
 
 ---
 
-### 6.3 Confusion Matrix
+### 5.3 Confusion Matrix
 
 <p align="center">
   <img src="../media/confusion_metrics.png" width="420"/>
@@ -189,7 +143,7 @@ Observations:
 
 ---
 
-### 6.4 ROC Curve
+### 5.4 ROC Curve
 
 <p align="center">
   <img src="../media/ROC_curve.png" width="420"/>
@@ -202,7 +156,7 @@ Observations:
 
 ---
 
-### 6.5 Class-wise Performance
+### 5.5 Class-wise Performance
 
 <p align="center">
   <img src="../media/bar_chart.png" width="450"/>
@@ -214,7 +168,7 @@ Observations:
 * Slight variation in meningioma class due to similarity with other tumors
 
 ---
-### 6.6 Sample Prediction with Confidence Scores
+### 5.6 Sample Prediction with Confidence Scores
 
 <p align="center">
   <img src="../media/classification_sample.png" width="500"/>
@@ -234,7 +188,7 @@ The probabilities are obtained using the softmax function applied to the output 
 
 Confidence scores provide insight into the model's reliability and are particularly useful in real-world medical decision-making scenarios.
 
-## 7. Discussion
+## 6. Discussion
 
 The high performance of the model can be attributed to:
 
@@ -248,7 +202,7 @@ The model demonstrates strong generalization and robustness across all tumor cla
 
 ---
 
-## 9. Conclusion
+## 7. Conclusion
 
 This classification module successfully demonstrates the application of deep learning in medical image analysis. The use of EfficientNet-B0 combined with modern training techniques results in high accuracy and reliable performance.
 
