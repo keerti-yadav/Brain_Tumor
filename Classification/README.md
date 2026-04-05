@@ -168,10 +168,10 @@ Observations:
 * Slight variation in meningioma class due to similarity with other tumors
 
 ---
-### 5.6 Sample Prediction with Confidence Scores
+### 5.6 Prediction with Confidence Scores
 
 <p align="center">
-  <img src="../media/classification_sample.png" width="500"/>
+  <img src="../media/classification_sample.png" width="700"/>
 </p>
 
 The model outputs class probabilities using a softmax function applied to the final logits.
