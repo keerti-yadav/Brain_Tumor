@@ -72,10 +72,6 @@ For complete architecture, training details, and evaluation metrics:
 
 The segmentation module performs pixel-wise classification to identify the exact tumor region in MRI images. It is implemented using a U-Net architecture, which is well-suited for biomedical image segmentation.
 
-The model outputs a binary mask where:
-
-* 0 represents background
-* 1 represents tumor region
 
 ---
 
