@@ -5,8 +5,7 @@
   <img src="media/demo.gif" width="700"/>
 </p>
 
-If the video does not load, you can view it here:
-[Watch Demo Video](media/Demo_video.mp4)
+
 
 ---
 
@@ -77,7 +76,7 @@ The segmentation module performs pixel-wise classification to identify the exact
 
 ### Results
 
-* Accuracy: **0.9864**
+* Accuracy: **98.64%**
 * Increasing Dice Score during training
 * Stable training loss convergence
 
