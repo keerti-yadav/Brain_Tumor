@@ -2,11 +2,36 @@ import streamlit as st
 import torch
 import cv2
 import numpy as np
+import os
+import gdown
 
 from models.classifier import EfficientNetClassifier
 from models.gradcam import GradCAM
 from models.segmentation import UNet
 from config import *
+
+
+os.makedirs("models", exist_ok=True)
+
+
+cls_path = "models/best_model.pth"
+
+if not os.path.exists(cls_path):
+    gdown.download(
+        "https://drive.google.com/uc?id=13EZKGPAiy8kLlC0fUbZyu-V--oywp6HJ",
+        cls_path,
+        quiet=False
+    )
+
+
+seg_path = "models/segmentation_model.pth"
+
+if not os.path.exists(seg_path):
+    gdown.download(
+        "https://drive.google.com/uc?id=1cplS5pKBXVS2za9Kl-2SzkzC3RyK7QZn",
+        seg_path,
+        quiet=False
+    )
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(page_title="Brain Tumor Analysis", layout="wide")
@@ -22,7 +47,7 @@ def load_models():
     clf.eval()
 
     seg = UNet()
-    seg.load_state_dict(torch.load("models/segmentation_model.pth", map_location="cpu"))
+    seg.load_state_dict(torch.load("models/segmentation_model.pth", map_location=DEVICE))
     seg.eval()
 
     return clf, seg
